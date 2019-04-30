@@ -2,8 +2,8 @@
     <ul>
         {% for question in latest_question_list %}
             <li><a href="{% url 'polls:detail' question.id %}">{{question.question}}</a></li>
-    </ul>
         {% endfor %}
+    </ul>
 {% else %}
     <p>No polls are available</p>
 {% endif %}
